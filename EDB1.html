@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdB1* - Финансовый вихрь</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover:hover {
+            transform: translateY(-10px) scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .surprise-button {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .surprise-button:hover {
+            transform: scale(1.1);
+            background-color: #FFD700;
+            color: #6B21A8;
+        }
+        .banner-gradient {
+            background: linear-gradient(135deg, #FFD700, #6B21A8);
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #6B21A8, #FFD700);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="banner-gradient py-12 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-yellow-300 animate-pulse">EdB1* - Финансы с огоньком!</h1>
+            <p class="text-lg md:text-2xl italic text-purple-200">*Не банк, а сплошное веселье!</p>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="section-bg py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-yellow-300">Новая карта: Вихрь Хаоса</h2>
+            <p class="text-xl mb-8 text-purple-200">Готовы к финансовым американским горкам? Ваши деньги будут в шоке!</p>
+            <button class="bg-purple-600 text-yellow-300 px-8 py-4 rounded-full font-bold text-lg surprise-button">Рискни сейчас!</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-10 text-yellow-300">Наши продукты</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-6 rounded-xl card-hover">
+                <h3 class="text-2xl font-semibold mb-3 text-purple-200">Карта "Казус"</h3>
+                <p class="text-purple-100">Каждая транзакция — лотерея! Сюрпризы и комиссии поджидают за каждым углом.</p>
+            </div>
+            <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-6 rounded-xl card-hover">
+                <h3 class="text-2xl font-semibold mb-3 text-yellow-200">Ловушка-Кредит"</h3>
+                <p class="text-yellow-100">Запутанные условия и неожиданные списания — для любителей финансовых квестов!</p>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-6 rounded-xl card-hover">
+                <h3 class="text-2xl font-semibold mb-3 text-purple-200">Сюрприз-инатор</h3>
+                <p class="text-purple-100">Платите и наблюдайте, как комиссии появляются из ниоткуда!</p>
+            </div>
+            <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-6 rounded-xl card-hover">
+                <h3 class="text-2xl font-semibold mb-3 text-yellow-200">Хаотичный Пластик</h3>
+                <p class="text-yellow-100">Забудьте про баланс! Эта карта создана для финансового хаоса.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+    <section class="section-bg py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-6 text-yellow-300">EdB1. Кошель</h2>
+            <p class="text-xl mb-8 text-purple-200">Погрузитесь в хаос с нашим приложением! Запутанный интерфейс и сюрпризы включены.</p>
+            <ul class="text-left inline-block text-lg text-yellow-100">
+                <li class="mb-3">🔥 Запутанный интерфейс</li>
+                <li class="mb-3">🔥 Случайные списания</li>
+                <li class="mb-3">🔥 Абсурдный дизайн</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-10 text-yellow-300">Что говорят клиенты</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-8 rounded-xl border-2 border-yellow-300">
+                <p class="italic text-lg text-yellow-100">"Мой баланс исчез, но это было весело!"</p>
+                <p class="mt-4 font-semibold text-yellow-300">Игорь Сюрпризов</p>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-8 rounded-xl border-2 border-purple-300">
+                <p class="italic text-lg text-purple-100">"Каждый платеж — как приключение!"</p>
+                <p class="mt-4 font-semibold text-purple-300">Марина Хаотичная</p>
+            </div>
+            <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-8 rounded-xl border-2 border-yellow-300">
+                <p class="italic text-lg text-yellow-100">"EdB1 — это чистый хаос, и мне это нравится!"</p>
+                <p class="mt-4 font-semibold text-yellow-300">Виктор Платежкин</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section-bg py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-10 text-yellow-300">Наша команда</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-purple-200">Макар Зловещий</h3>
+                    <p class="text-lg text-yellow-100">Верховный Магистр Хаоса</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-yellow-200">Дамир Жиробас</h3>
+                    <p class="text-lg text-purple-100">Архитектор Финансовых Ловушек</p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-purple-200">Альберт Жиробасина Злой</h3>
+                    <p class="text-lg text-yellow-100">Главный Сюрпризолог</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-yellow-200">Костя Черный</h3>
+                    <p class="text-lg text-purple-100">Мастер Скрытых Комиссий</p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-400 to-purple-600 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-purple-200">Степа Фортнайтер</h3>
+                    <p class="text-lg text-yellow-100">Креативный Разрушитель Балансов</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600 to-yellow-400 p-8 rounded-xl text-center card-hover">
+                    <h3 class="text-2xl font-semibold text-yellow-200">Андрей Жирный Скуф</h3>
+                    <p class="text-lg text-purple-100">Гуру Финансового Безумия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="banner-gradient py-12 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-lg text-yellow-200">EdB1, Улица Непредсказуемости, д. 13, Город Абсурд, 54321</p>
+            <p class="mt-4 italic text-lg text-purple-200">*EdB1 — это пародия, а не настоящий банк. Все продукты вымышлены. Наслаждайтесь хаосом, но не верьте нам!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.surprise-button').addEventListener('click', () => {
+            alert('Ого! Вы только что запустили финансовый вихрь с EdB1! 😈');
+        });
+    </script>
+</body>
+</html>
